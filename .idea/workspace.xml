@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="651fbf43-113d-44fa-a02e-c99479b2e665" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Ref/gyroscope" beforeDir="false" afterPath="$PROJECT_DIR$/Ref/gyroscope" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ref/gyroscope/Evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ref/gyroscope/Evaluation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ref/gyroscope/toSQL.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ref/gyroscope/toSQL.py" afterDir="false" />
     </list>
@@ -166,7 +167,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Ref/gyroscope" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -239,6 +240,11 @@
               <item name="III-TeamProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="TeamProject" type="462c0819:PsiDirectoryNode" />
               <item name="AudioConverter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="III-TeamProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TeamProject" type="462c0819:PsiDirectoryNode" />
+              <item name="Ref" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
