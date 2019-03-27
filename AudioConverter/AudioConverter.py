@@ -29,9 +29,17 @@ def converter(input_path, output_path):
             inputfile = path + f
             if not os.path.isfile(inputfile):
                 inputfile = path + "/" + f
-            outputfile = inputfile.replace(input_path, output_path).replace(str(inputfile.split('.')[-1]), "mp3")
-            cmdorder = "./ffmpeg/bin/ffmpeg -i " + inputfile + " -acodec libmp3lame " + outputfile
+            tempfile = path + "/" + "temp.tmp"
+            os.rename(inputfile, tempfile)
+            outputfile = tempfile.replace(input_path, output_path).replace(str(tempfile.split('.')[-1]), "mp3")
+            cmdorder = "./ffmpeg/bin/ffmpeg -i " + tempfile + " -acodec libmp3lame " + outputfile
             subprocess.call(cmdorder, shell=False)
+            os.rename(tempfile, inputfile)
+            os.rename(outputfile, outputfile.replace("temp", str(f.split('.')[0])))
+            # print(outputfile)
+            # print(outputfile.replace("temp", str(f.split('.')[0])))
+            # print(inputfile)
+            # print(tempfile)
     print('success')
     return output_path
 
@@ -41,9 +49,9 @@ if __name__ == '__main__':
     # ffmpeg程式資料夾需放置於python專案資料夾底下
 
     # 輸入資料夾位置
-    input_path = './youtube/'
+    input_path = 'E:/music/youtube/'
     # 輸出資料夾位置
-    output_path = './audio_out/'
+    output_path = 'E:/music/audio_out/'
 
     if not os.path.exists(output_path):
         os.mkdir(output_path)
